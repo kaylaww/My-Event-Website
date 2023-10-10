@@ -1,29 +1,42 @@
 <!doctype html>
 <html lang="en">
  <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>MUSIC WONDERLAND</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUSIC WONDERLAND</title>
 
- <link rel="stylesheet" href="css/general_styles.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/general_styles.css">
+    <link rel="stylesheet" href="css/gallery_styles.css">
  </head>
  <body>
     <div class="grid-container">
         <div class="brand">Craft Market</div>
         <div class="page-links">
-        <button class="menu-button">Home</button>
-        <button class="menu-button">Gallery</button>
-        <button class="menu-button">About</button>
+            <a href="index.html"><button class="menu-button">Home</button></a>
+            <a href="gallery.html"><button class="menu-button">Gallery</button></a>
+            <a href="about.html"><button class="menu-button">About</button></a>
         </div> <!-- closes the page-links div -->
         <div class="main">
         <h1>Welcome to Music Wonderland - Your Ultimate Destination for Musical Bliss!</h1>
+
+        <figure>
+        <img class="home_splash" src="images/ home_splash.html.jpg" alt="a vinyl record.">
+        <figcaption>Photo taken by Erik Mclean src: splash.com</figcaption>
+        </figure>
         <p>Step into a realm of enchanting melodies and a symphony of sounds at Music Wonderland, the most extraordinary music website you'll ever encounter. Our mission is simple: to provide you with an unparalleled musical experience that transcends age, taste, and boundaries.</p>
         <p>Immerse yourself in a vast collection of handpicked tunes that cater to every age group, from timeless classics that evoke nostalgia to the latest chart-topping hits that keep you on the cutting edge. No matter your musical preference, we have something special in store for you.</p>
         <p>But that's not all! Brace yourself to witness the magic of cutting-edge technology as our AI-powered music generator crafts your very own personalized music list. Discover songs that resonate with your soul and captivate your senses, all at the tap of a button. Music Wonderland's AI understands you better than you do, curating a playlist that feels like a musical extension of yourself.</p>
         <p>With an intuitive and seamless user interface, navigating through Music Wonderland is as delightful as discovering new melodies. Our platform is designed to empower you to explore, connect, and share your musical journey with friends and family. Discover new genres, uncover hidden gems, and revisit old favorites – the possibilities are endless.</p>
         <p>Join the growing community of music lovers from all walks of life and embark on a magical journey through the enchanting world of Music Wonderland. Let the power of music bring joy, harmony, and inspiration to your life. Your melody-filled adventure awaits!</p>
+        <button id="discount-code">Give me a discount code!</button>
+        <p id="your-discount-code">Click the button above to reveal your discount code</p>
     </div> <!-- closes the main div -->
   </div> <!-- closes the grid-container div -->
+  <script src="js/site_interactions.js"></script>
 
 
  </body>
