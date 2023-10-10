@@ -1,0 +1,89 @@
+:root {
+    --pink: #F2BBC5;
+    --white: #F2F2F2;
+    --green: #C4DEDB;
+    --blue: #BCD4EC;
+    --yellow: #FAECC4;
+}
+
+html, body {
+    background-color: var(--yellow);
+    margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;  
+}
+
+body{font-family: 'Poppins', sans-serif;
+}
+
+    h1 {
+        color: var(--pink);
+        font-weight: bold;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto 1fr;
+            }
+        
+        .brand {
+                grid-column: 1 / span 2;
+                grid-row: 1;
+                background-color: #94e9f1;
+                padding: 10px;
+                font-size: 25px;
+                font-weight:bold;
+                color: white;
+                }
+                
+        .page-links {
+                grid-column: 3 / span 2;
+                grid-row: 1;
+                text-align: right;
+                background-color: #94e9f1;
+                padding: 10px;
+                }
+            
+                .main {
+                    grid-column: 1 / -1;
+                    grid-row: 2;
+                    width: 78vw;
+                    margin: 0 auto;
+                    }
+
+                    .menu-button {
+                        font-size: 20px;
+                        color: white;
+                        background-color: var(--pink);
+                        padding: 2px 20px;
+                        border-style: solid;
+                        border-radius: 5px;
+                        border-color: white;
+                        }
+
+.heading_center {
+    text-align: center;
+}
+.home_splash {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+figcaption {
+    color: grey;
+    font-weight: 100;
+}
+
+.guess-like-link {
+    font-size: medium;
+    text-decoration: none;
+    color: #F2BBC5;
+}
+
+.playlist-link {
+    font-size: medium;
+    text-decoration: none;
+    color: #F2BBC5;
+}

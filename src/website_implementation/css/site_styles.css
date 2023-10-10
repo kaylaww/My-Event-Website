@@ -1,0 +1,132 @@
+:root {
+    --pink: #F2BBC5;
+    --white: #F2F2F2;
+    --green: #C4DEDB;
+    --blue: #BCD4EC;
+    --yellow: #FAECC4;
+}
+
+/* basic */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--white);
+    color: var(--pink);
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color:var(--blue);
+    font-weight: bold;
+}
+
+/* aside bar */
+aside {
+    background-color: var(--yellow);
+    padding: 20px;
+}
+
+/* main section */
+main {
+    padding: 20px;
+}
+
+/* footer */
+footer {
+    background-color: var(--white);
+    padding: 20px;
+}
+
+/* others */
+
+
+/* .flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-header-menu, .flex-footer-menu, .flex-side-menu {
+    flex-shrink: 0;
+    background-color: #FAECC4;
+    color: #000;
+    padding: 0px 4px 0px 4px;
+}
+
+.flex-main-content {
+    flex: 1;
+} */
+
+/* Mobile-first: These rules apply by default */
+/* .flex-header-menu {
+    display: none; hide the header
+}
+
+.flex-side-menu {
+    display: none;
+}
+
+.flex-footer-menu { */
+    /* display: block; /* show the footer*/
+/* }
+
+.main-container { */
+    /* width: 100vw; /*set the widthe to full screen*/
+/* } 
+
+/* @media only screen and (min-width: 601px) and (max-width: 1194px) { */
+    /* .flex-container {
+        flex-direction: row;
+    }
+
+    .flex-header-menu{
+        display: none;
+    }
+
+    .flex-side-menu {
+        display: block;
+    }
+
+    .flex-footer-menu {
+        display: none; 
+    }
+} */ 
+/* 
+@media only screen and (min-width: 1195px) {
+    .flex-header-menu{
+        display: block;
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .flex-footer-menu {
+        display: none; 
+    }
+    
+    .main-container-menu {
+        width: 75vw; 
+    }
+}  */
