@@ -92,6 +92,8 @@ figcaption {
     padding: 2vw;
 }
 
+
+
 /* Navigation */
 .nav-link {
     color: #242424;
@@ -182,11 +184,19 @@ figcaption {
 .top-grid-row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(5vh, auto);
+    grid-auto-rows: minmax(1vh, 3vh);
     gap: 8px;
-    margin: 1vh 1vw;
+    margin-top: 16px;
     align-items: center;
     justify-items: center;
+}
+.bottom-grid-row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(1vh, 3vh);
+    gap: 8px;
+    align-items: center;
+    justify-items: start;
 }
 .grid-row img {
     max-width: 100%; 
@@ -204,16 +214,19 @@ figcaption {
     object-fit: contain;
 }
 .promotion-banner {
-    background-color: #FFA500; /* 横幅的背景颜色 */
-    color: #FFFFFF; /* 文本颜色 */
-    text-align: center; /* 文本居中对齐 */
-    padding: 10px; /* 内边距，增加横幅与内容的间距 */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+    background-color: #7bf2ff;
+    color: #000000; /* 文本颜色 */
+    text-align: start; 
+    padding: 20px; /* 内边距，增加横幅与内容的间距 */
 }
 
-.promotion-banner a {
-    color: #FFFFFF; /* 链接文本颜色 */
-    text-decoration: none; /* 去掉链接下划线 */
-    margin-left: 10px; /* 链接与文本之间的间距 */
+.promotion-banner p {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .col-1 { grid-column: span 1; }
