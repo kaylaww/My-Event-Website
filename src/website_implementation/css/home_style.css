@@ -1,9 +1,45 @@
+.icon {
+    display: grid;
+    grid-auto-rows: min-content;
+    justify-items: start;
+    align-items: start;
+}
 .centered-content img{
     width: auto;
     height: 50vh;
     padding: 2vw;
 }
 
-.centered-content {
-    padding: 2vw;
+.play-bar {
+    width: 1.2vw;
+    height: auto;
+    padding: 1vh;
+}
+
+.decoration-bar {
+    justify-items: center;
+    align-items: center;
+    width: 25vw;
+    height: auto;
+}
+
+.login {
+    width: 6vw;
+    height: auto;
+}
+
+.menu {
+    width: 2vw;
+    height: auto;
+}
+
+.volumn {
+    width: 9vw;
+    height: auto;
+    margin: 3px;
+}
+
+.searchbar {
+    width: auto;
+    height: 10vh;
 }

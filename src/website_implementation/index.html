@@ -8,21 +8,13 @@
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fredericka+the+Great&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/home_style.css">
  </head>
  <body>
     <div class="flex-container">
         <header class="flex-header-menu header-menu" aria-label="Main menu">
-            <div class="header-name">
-                <a href="index.html" class="nav-link brand" aria-label="Hompage" aria-current="page" tabindex="0">Find your music</a>
-            </div>
-            <div class="headerlinks">
-                <a href="category.html" class="nav-link" aria-label="Category" tabindex="0">Category</a>
-                <a href="album.html" class="nav-link" aria-label="Album" tabindex="0">Generate my album</a>
-                <a href="notification.html" class="nav-link" aria-label="Notification" tabindex="0">Notification</a>
-            </div>
             <a href="" class="nav-link" aria-label="Hompage" aria-current="page">
                 <img src="media/home.png" alt="home">
                 <span>Hompage</span>
@@ -41,48 +33,133 @@
             </a>
         </header>
         <aside class="flex-side-menu side-menu" aria-label="Main menu">
+
+            <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
+                <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
+                <span class="head-icon">Music</span>
+            </a>
+             
             <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
-                <img src="media/home.png" alt="home">
-                <span>Hompage</span>
+                <img class="icon-img" src="media/icons8-home-24.png" alt="home">
+                <span class="icon-text">Hompage</span>
             </a>
             <a href="category.html" class="nav-link" aria-label="Category">
-                <img src="media/category.png" alt="category">
-                <span>Category</span>
+                <img class="icon-img" src="media/icons8-grid-48.png" alt="category">
+                <span class="icon-text">Category</span>
             </a>
             <a href="album.html" class="nav-link" aria-label="Album">
-                <img src="media/lougemusic.png" alt="album">
-                <span>Generate Album</span>
+                <img class="icon-img" src="media/icons8-music-record-64.png" alt="album">
+                <span class="icon-text">Generate Album</span>
             </a>
             <a href="notification.html" class="nav-link" aria-label="Notification">
-                <img src="media/notification.png" alt="notification">
-                <span>Notification</span>
+                <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
+                <span class="icon-text">Notification</span>
             </a>
+                
         </aside>
         <section class="flex-main-content main-content" aria-label="Main content">
             <!--Main content will go there-->
-            <div class="grid-row">
-                <div class="col-12 col-md-6 col-lg-8" style="background-color: aqua;">
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" style="background-color: antiquewhite;">
-                </div>
-            </div>
-            <div class="centered-content">
-                <h1>Welcome to Music Wonderland - Your Ultimate Destination for Musical Bliss!</h1>
-                <figure>
-                    <img class="home_splash" src="media/ home_splash.html.jpg" alt="a vinyl record.">
-                    <figcaption>Photo taken by Erik Mclean src: splash.com</figcaption>
-                </figure>
-            
-                <div>
-                    <a class="guess-like-link" href="guess_you_like.html">Guess you like ></a>
+            <div class="top-grid-row">
+                <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-4 col-md-4 col-lg-4" style="background-color: white;">
+                            <img class="play-bar" src="media/rewind.png" alt="rewind">
+                        </div>
+        
+                        <div class="col-4 col-md-4 col-lg-4" style="background-color: white;">
+                            <img class="play-bar" src="media/playblue.png" alt="play">
+                        </div>
+        
+                        <div class="col-4 col-md-4 col-lg-4" style="background-color: white;">
+                            <img class="play-bar" src="media/fast-forward.png" alt="fast-forward">
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <a class="playlist-link" href="music.html">Playlist ></a>
+                <div class="col-7 col-md-7 col-lg-7" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                        </div>
+                        <div class="col-9 col-md-9 col-lg-9" style="background-color: white;">
+                            <img class="decoration-bar" src="media/decorationbar.png" alt="decoration">
+                        </div>
+                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                        </div>
+                    </div>
                 </div>
-                <button id="discount-code">Give me a discount code!</button>
-                <p id="your-discount-code">Click the button above to reveal your discount code</p>
+                <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-9 col-md-9 col-lg-9" style="background-color: white;"> 
+                            <img class="volumn" src="media/volum.png" alt="volumn">
+                        </div>
+        
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                            <a href="menu.html" class="nav-link" aria-label="menu">
+                                <img class="menu" src="media/menu.png" alt="menu">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-11 col-md-11 col-lg-11">
+                            <a href="login.html" class="nav-link" aria-label="login">
+                                <img class="login" src="media/login.png" alt="login">
+                            </a>
+                        </div>
+                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+            <div class="grid-row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <h1>Find Your Music Wonderland</h1>
+                    <hr>
+                    <h2>Welcome to Music Wonderland - Your Ultimate Destination for Musical Bliss!</h2>
+                </div>
+            </div>
+            
+            <div>
+                <a class="guess-like-link" href="guess_you_like.html">Guess you like ></a>
+            </div>
+            <div class="grid-row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <a href="guess_you_like.html" aria-label="guess_you_like">
+                        <img class="grab-picture-1" src="media/homecover1.png" alt="covers">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <a href="guess_you_like.html" aria-label="guess_you_like">
+                        <img class="grab-picture-1" src="media/homecover2.png" alt="covers">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <a class="playlist-link" href="music.html">Playlist ></a>
+            </div>
+            <div class="grid-row">
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a href="playlist.html" aria-label="guess_you_like">
+                        <img class="grab-picture-2" src="media/plcover5.png" alt="covers">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a href="playlist.html" aria-label="guess_you_like">
+                        <img class="grab-picture-2" src="media/plcover2.png" alt="covers">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <img class="grab-picture-2" src="media/plcover3.png" alt="covers">
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <img class="grab-picture-2" src="media/plcover4.png" alt="covers">
+                </div>
+            </div>
+            
+            <button id="discount-code">Give me a discount code!</button>
+            <p id="your-discount-code">Click the button above to reveal your discount code</p>       
         </section>
         <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
             <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
