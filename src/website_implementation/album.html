@@ -1,51 +1,207 @@
 <!doctype html>
 <html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUSIC WONDERLAND</title>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MUSIC WONDERLAND</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fredericka+the+Great&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/general_styles.css">
+    <link rel="stylesheet" href="css/home_style.css">
+ </head>
+ <body>
+    <div class="flex-container">
+        <header class="flex-header-menu header-menu" aria-label="Main menu">
+            <a href="" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img src="media/home.png" alt="home">
+                <span>Hompage</span>
+            </a>
+            <a href="" class="nav-link" aria-label="Category">
+                <img src="media/category.png" alt="category">
+                <span>Category</span>
+            </a>
+            <a href="" class="nav-link" aria-label="Album">
+                <img src="media/lougemusic.png" alt="album">
+                <span>Generate My Album</span>
+            </a>
+            <a href="" class="nav-link" aria-label="Notification">
+                <img src="media/notification.png" alt="notification">
+                <span>Notification</span>
+            </a>
+        </header>
+        <aside class="flex-side-menu side-menu" aria-label="Main menu">
 
-        <link rel="stylesheet" href="css/general_styles.css">
-        <link rel="stylesheet" href="css/album.css">
-    </head>
+            <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
+                <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
+                <span class="head-icon">Music</span>
+            </a>
+             
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img class="icon-img" src="media/icons8-home-24.png" alt="home">
+                <span class="icon-text">Hompage</span>
+            </a>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img class="icon-img" src="media/icons8-grid-48.png" alt="category">
+                <span class="icon-text">Category</span>
+            </a>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img class="icon-img" src="media/icons8-music-record-64.png" alt="album">
+                <span class="icon-text">Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
+                <span class="icon-text">Notification</span>
+            </a>
+                
+        </aside>
+        <section class="flex-main-content main-content" aria-label="Main content">
+            <!--Main content will go there-->
+            <div class="top-grid-row">
+                <div class="col-3 col-md-3 col-lg-3" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                        </div>
+                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                            <img class="play-bar" src="media/icons8-repeat-60.png" alt="repeat">
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                            <img class="play-bar" src="media/rewind.png" alt="rewind">
+                        </div>
+        
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                            <img class="play-bar" src="media/playblue.png" alt="play">
+                        </div>
+        
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                            <img class="play-bar" src="media/fast-forward.png" alt="fast-forward">
+                        </div>
+                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                            <img class="play-bar" src="media/icons8-shuffle-48.png" alt="shuffle">
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                        </div>
+                    </div>
+                </div>
 
-    <body>
-        <div class="grid-container">
-            <div class="brand">My ALbum</div>
-            <div class="page-links">
-                <a href="index.html"><button class="menu-button">Hompage</button></a>
-                <a href="category.html"><button class="menu-button">Category</button></a>
-                <a href="album.html"><button class="menu-button">Generate my album</button></a>
-                <a href="notification.html"><button class="menu-button">Notification</button></a>
+                <div class="col-6 col-md-6 col-lg-6" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-12 col-md-12 col-lg-12" style="background-color: white;">
+                            <img class="decoration-bar" src="media/decorationbar.png" alt="decoration">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-9 col-md-9 col-lg-9" style="background-color: white;"> 
+                            <img class="volumn" src="media/volum.png" alt="volumn">
+                        </div>
+        
+                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+                            <a href="menu.html" class="nav-link" aria-label="menu">
+                                <img class="menu" src="media/menu.png" alt="menu">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                    <div class="top-grid-row">
+                        <div class="col-11 col-md-11 col-lg-11">
+                            <a href="login.html" class="nav-link" aria-label="login">
+                                <img class="login" src="media/login.png" alt="login">
+                            </a>
+                        </div>
+                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <hr>
+                <h1>Creat My Album</h1>
+                <!-- <div class="grid-row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <hr>
+                    </div>
+                </div> -->
+                <h2>Complete your profile to help us generate the album belongs to you！</h2>
+            </div>
+            
+            <div>
+                <a class="guess-like-link" href="guess_you_like.html">Control my album ></a>
+            </div>
+            <div class="grid-row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <a href="guess_you_like.html" aria-label="guess_you_like">
+                        <img class="grab-picture-1" src="media/homecover1.png" alt="covers">
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <a href="guess_you_like.html" aria-label="guess_you_like">
+                        <img class="grab-picture-1" src="media/homecover2.png" alt="covers">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <a class="playlist-link" href="music.html">Playlist ></a>
+            </div>
+            <div class="grid-row">
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a href="playlist.html" aria-label="guess_you_like">
+                        <img class="grab-picture-2" src="media/plcover5.png" alt="covers">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a href="playlist.html" aria-label="guess_you_like">
+                        <img class="grab-picture-2" src="media/plcover2.png" alt="covers">
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <img class="grab-picture-2" src="media/plcover3.png" alt="covers">
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <img class="grab-picture-2" src="media/plcover4.png" alt="covers">
+                </div>
+            </div>
+        </section>
+        <div class="promotion-banner">
+            <div class="bottom-grid-row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <p>Chance to jion us with the lower price!</p>
+                </div>
+                <div class="col-10 col-md-10 col-lg-10">
+                    <p id="your-discount-code">Click the button above to reveal your discount code</p>
+                </div>
+                <div class="col-2 col-md-2 col-lg-2">
+                    <button id="discount-code">Give me a discount code!</button>
+                </div>  
             </div>
         </div>
-        <div class="gallery-container">
-            <figure class="gallery-item" id="gallery_item_1">
-                <img src="media/gallery_1.jpg" class="gallery_img">
-            </figure>
-            <figure class="gallery-item" id="gallery_item_2">
-                <img src="media/gallery_2.jpg" class="gallery_img">
-            </figure>
-            <figure class="gallery-item" id="gallery_item_3">
-                <img src="media/gallery_3.jpg" class="gallery_img">
-            </figure>
-            <figure class="gallery-item" id="gallery_item_4">
-                <img src="media/cover1.jpeg" class="gallery_img">
-            </figure>
-            <figure class="gallery-item" id="gallery_item_5">
-                <img src="media/cover2.jpeg" class="gallery_img">
-            </figure>
-            <figure class="gallery-item" id="gallery_item_6">
-                <img src="media/cover3.jpeg" class="gallery_img">
-            </figure>
-            <figure class="gallery-item" id="gallery_item_7">
-                <img src="media/gallery_7.jpg" class="gallery_img">
-            </figure>
-            <figure class="gallery-item" id="gallery_item_8">
-                <img src="media/gallery_8.jpg" class="gallery_img">
-            </figure>
-        </div>
-    </body>
+        <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img src="media/home.png" alt="home">
+                <span>Hompage</span>
+            </a>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img src="media/category.png" alt="category">
+                <span>Category</span>
+            </a>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img src="media/lougemusic.png" alt="album">
+                <span>Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img src="media/notification.png" alt="notification">
+                <span>Notification</span>
+            </a>
+        </footer>
+    </div> <!-- closes the main div -->
+ 
+    <script src="js/site_interactions.js"></script>
 
+
+ </body>
 </html>
