@@ -29,7 +29,7 @@ h2 {
     font-family: 'Dancing+Script', cursive;
     font-weight: 400;
     margin-left: 30px;
-    margin-top: 0;
+    margin-top: 10px;
     }
 
 .grid-container {
@@ -55,16 +55,6 @@ h2 {
         background-color: #94e9f1;
         padding: 10px;
         }
-    
-.menu-button {
-    font-size: 20px;
-    color: white;
-    background-color: var(--pink);
-    padding: 2px 20px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
-    }
 
 .heading_center {
     text-align: center;
@@ -141,7 +131,7 @@ figcaption {
 }
 
 .flex-main-content {
-    margin-left: 250px;
+    width: 100%;
     
 }
 
@@ -223,15 +213,32 @@ figcaption {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 6vh;
+    height: 8vh;
     background-color: #7bf2ff;
-    color: #000000; /* 文本颜色 */
+    color: #000000; 
     text-align: start; 
-    padding: 20px; /* 内边距，增加横幅与内容的间距 */
+    padding: 20px; 
 }
 
 .promotion-banner p {
     font-family: 'Times New Roman', Times, serif;
+}
+
+.top-banner {
+    width: 100%;
+    background-color: #aaf6ff;
+    color: #000000; 
+    border-bottom: 1px solid #d1d1d1;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.top-banner p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
 }
 
 .col-1 { grid-column: span 1; }
@@ -257,15 +264,28 @@ figcaption {
     }
 
     .flex-side-menu {
+        position: fixed;
+        height: 100%;
         display: grid;
+        width: 170px;
         grid-auto-rows: min-content;
-        justify-items: center;
-        align-items: center;
-        gap: 3vh;
+        gap: 4vh;
+        padding: 5vh 3vw;
+        align-content: start;
+        justify-content: center;
         text-align: center;
-        padding: 4vh 3vw;
+    }
+    .flex-side-menu a {
+        background-color: rgb(246, 246, 246);
     }
 
+    .flex-side-menu a:hover {
+        background-color: #d3d2d2;
+    }
+
+    .flex-side-menu a:active {
+        background-color: #d3d2d2;
+    }
     .flex-side-menu img{
         width: 2vw;
         height: auto;
@@ -277,8 +297,25 @@ figcaption {
         display: block;
     }
 
+    .flex-main-content {
+        margin-left: 230px;
+        
+    }
+
     .flex-footer-menu {
         display: none; 
+    }
+
+    .promotion-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6vh;
+        background-color: #7bf2ff;
+        color: #000000; 
+        text-align: start; 
+        padding: 20px; 
     }
     .col-md-1 { grid-column: span 1; }
     .col-md-2 { grid-column: span 2; }
@@ -327,6 +364,9 @@ figcaption {
         padding: 1vw;
         
     } */
+    .flex-side-menu a {
+        background-color: rgb(246, 246, 246);
+    }
 
     .flex-side-menu a:hover {
         background-color: #d3d2d2;
@@ -342,6 +382,22 @@ figcaption {
     
     .main-container-menu {
         width: 75vw; 
+    }
+    
+    .flex-main-content {
+        margin-left: 250px;
+        
+    }
+    .promotion-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6vh;
+        background-color: #7bf2ff;
+        color: #000000; 
+        text-align: start; 
+        padding: 20px; 
     }
     
     .col-lg-1 { grid-column: span 1; }
