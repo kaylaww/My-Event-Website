@@ -15,21 +15,32 @@
  <body>
     <div class="flex-container">
         <header class="flex-header-menu header-menu" aria-label="Main menu">
-            <a href="" class="nav-link" aria-label="Hompage" aria-current="page">
-                <img src="media/home.png" alt="home">
-                <span>Hompage</span>
+            <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
+                <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
+                <span class="head-icon">Music</span>
             </a>
-            <a href="" class="nav-link" aria-label="Category">
-                <img src="media/category.png" alt="category">
-                <span>Category</span>
+             
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img class="icon-img" src="media/icons8-home-24.png" alt="home">
+                <span class="icon-text">Hompage</span>
             </a>
-            <a href="" class="nav-link" aria-label="Album">
-                <img src="media/lougemusic.png" alt="album">
-                <span>Generate My Album</span>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img class="icon-img" src="media/icons8-grid-48.png" alt="category">
+                <span class="icon-text">Category</span>
             </a>
-            <a href="" class="nav-link" aria-label="Notification">
-                <img src="media/notification.png" alt="notification">
-                <span>Notification</span>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img class="icon-img" src="media/icons8-music-record-64.png" alt="album">
+                <span class="icon-text">Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
+                <span class="icon-text">Notification</span>
+            </a>
+            <a href="index.html" class="nav-link" aria-label="Get the app">
+                <div class="nav-link-app">
+                    <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                    <span class="app-text">click to get it on your phone</span>
+                </div>  
             </a>
         </header>
         <aside class="flex-side-menu side-menu" aria-label="Main menu">
@@ -55,70 +66,75 @@
                 <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
                 <span class="icon-text">Notification</span>
             </a>
-                
+            <a href="index.html" class="nav-link" aria-label="Get the app">
+                <div class="nav-link-app">
+                    <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                    <span class="app-text">click to get it on your phone</span>
+                </div>  
+            </a>   
         </aside>
         <section class="flex-main-content main-content" aria-label="Main content">
             <!--Main content will go there-->
-            <div class="top-grid-row">
-                <div class="col-3 col-md-3 col-lg-3" style="background-color: white;">
-                    <div class="top-grid-row">
-                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
-                        </div>
-                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
-                            <img class="play-bar" src="media/icons8-repeat-60.png" alt="repeat">
-                        </div>
-                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
-                            <img class="play-bar" src="media/rewind.png" alt="rewind">
-                        </div>
-        
-                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
-                            <img class="play-bar" src="media/playblue.png" alt="play">
-                        </div>
-        
-                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
-                            <img class="play-bar" src="media/fast-forward.png" alt="fast-forward">
-                        </div>
-                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
-                            <img class="play-bar" src="media/icons8-shuffle-48.png" alt="shuffle">
-                        </div>
-                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
+            <div class="top-bar">
+                <div class="top-grid-row">
+                    <div class="col-3 col-md-4 col-lg-3">
+                        <div class="top-grid-row">
+                            <div class="col-2 col-md-2 col-lg-2">
+                            </div>
+                            <div class="col-1 col-md-1 col-lg-1">
+                                <img class="play-bar" src="media/icons8-repeat-60.png" alt="repeat">
+                            </div>
+                            <div class="col-2 col-md-2 col-lg-2">
+                                <img class="play-bar" src="media/rewind.png" alt="rewind">
+                            </div>
+            
+                            <div class="col-2 col-md-2 col-lg-2">
+                                <img class="play-bar" src="media/playblue.png" alt="play">
+                            </div>
+            
+                            <div class="col-2 col-md-2 col-lg-2">
+                                <img class="play-bar" src="media/fast-forward.png" alt="fast-forward">
+                            </div>
+                            <div class="col-1 col-md-1 col-lg-1">
+                                <img class="play-bar" src="media/icons8-shuffle-48.png" alt="shuffle">
+                            </div>
+                            <div class="col-2 col-md-2 col-lg-1">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-6 col-md-6 col-lg-6" style="background-color: white;">
-                    <div class="top-grid-row">
-                        <div class="col-12 col-md-12 col-lg-12" style="background-color: white;">
-                            <img class="decoration-bar" src="media/decorationbar.png" alt="decoration">
+                    <div class="col-6 col-md-5 col-lg-6">
+                        <img class="decoration-bar" src="media/decorationbar.png" alt="decoration">
+                    </div>
+                    <div class="col-2 col-md-2 col-lg-2">
+                        <div class="top-grid-row">
+                            <div class="col-9 col-md-9 col-lg-9"> 
+                                <img class="volumn" src="media/volum.png" alt="volumn">
+                            </div>
+            
+                            <div class="col-3 col-md-3 col-lg-2">
+                                <a href="menu.html" class="nav-link" aria-label="menu">
+                                    <img class="menu" src="media/menu.png" alt="menu">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
-                    <div class="top-grid-row">
-                        <div class="col-9 col-md-9 col-lg-9" style="background-color: white;"> 
-                            <img class="volumn" src="media/volum.png" alt="volumn">
-                        </div>
-        
-                        <div class="col-2 col-md-2 col-lg-2" style="background-color: white;">
-                            <a href="menu.html" class="nav-link" aria-label="menu">
-                                <img class="menu" src="media/menu.png" alt="menu">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
-                    <div class="top-grid-row">
-                        <div class="col-11 col-md-11 col-lg-11">
-                            <a href="login.html" class="nav-link" aria-label="login">
-                                <img class="login" src="media/login.png" alt="login">
-                            </a>
-                        </div>
-                        <div class="col-1 col-md-1 col-lg-1" style="background-color: white;">
+                    <div class="col-1 col-md-1 col-lg-1">
+                        <div class="top-grid-row">
+                            <div class="col-2 col-md-1 col-lg-1"></div>
+                            <div class="col-9 col-md-9 col-lg-10">
+                                <a href="login.html" class="nav-link" aria-label="login">
+                                    <img class="login" src="media/login.png" alt="login">
+                                </a>
+                            </div>
+                            <div class="col-1 col-md-1 col-lg-1">
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-                
             </div>
+            
             <div>
                 <hr>
                 <h1>Find Your Music Wonderland</h1>
@@ -146,7 +162,7 @@
                 </div>
             </div>
             <div>
-                <a class="playlist-link" href="music.html">Playlist ></a>
+                <a class="playlist-link" href="playlist.html">Playlist ></a>
             </div>
             <div class="grid-row">
                 <div class="col-6 col-md-3 col-lg-3">
@@ -169,13 +185,13 @@
         </section>
         <div class="promotion-banner">
             <div class="bottom-grid-row">
-                <div class="col-12 col-md-12 col-lg-12">
+                <div class="col-8 col-md-12 col-lg-12">
                     <p>Chance to jion us with the lower price!</p>
                 </div>
-                <div class="col-12 col-md-10 col-lg-10">
+                <div class="col-6 col-md-8 col-lg-10">
                     <p id="your-discount-code">Click the button above to reveal your discount code</p>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <button id="discount-code">Give me a discount code!</button>
                 </div>  
             </div>

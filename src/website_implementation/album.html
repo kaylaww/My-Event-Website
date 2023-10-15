@@ -10,26 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fredericka+the+Great&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general_styles.css">
-    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/category.css">
  </head>
  <body>
     <div class="flex-container">
         <header class="flex-header-menu header-menu" aria-label="Main menu">
-            <a href="" class="nav-link" aria-label="Hompage" aria-current="page">
-                <img src="media/home.png" alt="home">
-                <span>Hompage</span>
+            <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
+                <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
+                <span class="head-icon">Music</span>
             </a>
-            <a href="" class="nav-link" aria-label="Category">
-                <img src="media/category.png" alt="category">
-                <span>Category</span>
+             
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img class="icon-img" src="media/icons8-home-24.png" alt="home">
+                <span class="icon-text">Hompage</span>
             </a>
-            <a href="" class="nav-link" aria-label="Album">
-                <img src="media/lougemusic.png" alt="album">
-                <span>Generate My Album</span>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img class="icon-img" src="media/icons8-grid-48.png" alt="category">
+                <span class="icon-text">Category</span>
             </a>
-            <a href="" class="nav-link" aria-label="Notification">
-                <img src="media/notification.png" alt="notification">
-                <span>Notification</span>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img class="icon-img" src="media/icons8-music-record-64.png" alt="album">
+                <span class="icon-text">Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
+                <span class="icon-text">Notification</span>
+            </a>
+            <a href="index.html" class="nav-link" aria-label="Get the app">
+                <div class="nav-link-app">
+                    <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                    <span class="app-text">click to get it on your phone</span>
+                </div>  
             </a>
         </header>
         <aside class="flex-side-menu side-menu" aria-label="Main menu">
@@ -69,49 +80,60 @@
             <div>
                 <a class="create-album-link" href="album.html">Creat My Album ></a>
             </div>
-                <!-- <div class="grid-row">
-                    <div class="col-12 col-md-12 col-lg-12">
-                        <hr>
-                    </div>
-                </div> -->
+               
             <div>
                 <h2>Complete your profile to help us generate the album belongs to you！</h2>
             </div>
             
             <div>
-                <a class="guess-like-link" href="guess_you_like.html">Control my album ></a>
+                <a class="control-album-link" href="guess_you_like.html">Control my album ></a>
             </div>
+
             <div class="grid-row">
                 <div class="col-12 col-md-6 col-lg-6">
                     <a href="guess_you_like.html" aria-label="guess_you_like">
-                        <img class="grab-picture-1" src="media/homecover1.png" alt="covers">
+                        <img class="grab-picture-1" src="media/artistcover1.png" alt="covers">
                     </a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
                     <a href="guess_you_like.html" aria-label="guess_you_like">
-                        <img class="grab-picture-1" src="media/homecover2.png" alt="covers">
+                        <img class="grab-picture-1" src="media/artistcover2.png" alt="covers">
                     </a>
-                </div>
+                </div> 
             </div>
-            <div>
-                <a class="playlist-link" href="music.html">Playlist ></a>
-            </div>
+            
             <div class="grid-row">
                 <div class="col-6 col-md-3 col-lg-3">
-                    <a href="playlist.html" aria-label="guess_you_like">
-                        <img class="grab-picture-2" src="media/plcover5.png" alt="covers">
+                    <a class="artist-link" href="music.html">Community ></a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a class="artist-link" href="music.html">Fans ></a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a class="artist-link" href="music.html">Data ></a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a class="artist-link" href="music.html">Security ></a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <a class="playlist-link" href="music.html">
+                        <img class="grab-picture-2" src="media/icons8-multicultural-people-50.png" alt="Community">
                     </a>
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
-                    <a href="playlist.html" aria-label="guess_you_like">
-                        <img class="grab-picture-2" src="media/plcover2.png" alt="covers">
+                    <a class="playlist-link" href="music.html">
+                        <img class="grab-picture-2" src="media/icons8-smiling-50.png" alt="fans">
                     </a>
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
-                    <img class="grab-picture-2" src="media/plcover3.png" alt="covers">
+                    <a class="playlist-link" href="music.html">
+                        <img class="grab-picture-2" src="media/icons8-table-properties-50.png" alt="artist data">
+                    </a>
                 </div>
                 <div class="col-6 col-md-3 col-lg-3">
-                    <img class="grab-picture-2" src="media/plcover4.png" alt="covers">
+                    <a class="playlist-link" href="music.html">
+                        <img class="grab-picture-2" src="media/icons8-security-configuration-50.png" alt="security">
+                    </a>
                 </div>
             </div>
         </section>
@@ -120,10 +142,10 @@
                 <div class="col-12 col-md-12 col-lg-12">
                     <p>Chance to jion us with the lower price!</p>
                 </div>
-                <div class="col-10 col-md-10 col-lg-10">
+                <div class="col-6 col-md-10 col-lg-10">
                     <p id="your-discount-code">Click the button above to reveal your discount code</p>
                 </div>
-                <div class="col-2 col-md-2 col-lg-2">
+                <div class="col-6 col-md-2 col-lg-2">
                     <button id="discount-code">Give me a discount code!</button>
                 </div>  
             </div>

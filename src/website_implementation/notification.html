@@ -10,30 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fredericka+the+Great&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general_styles.css">
-    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/notification_style.css">
  </head>
  <body>
     <div class="flex-container">
         <header class="flex-header-menu header-menu" aria-label="Main menu">
-            <a href="" class="nav-link" aria-label="Hompage" aria-current="page">
-                <img src="media/home.png" alt="home">
-                <span>Hompage</span>
-            </a>
-            <a href="" class="nav-link" aria-label="Category">
-                <img src="media/category.png" alt="category">
-                <span>Category</span>
-            </a>
-            <a href="" class="nav-link" aria-label="Album">
-                <img src="media/lougemusic.png" alt="album">
-                <span>Generate My Album</span>
-            </a>
-            <a href="" class="nav-link" aria-label="Notification">
-                <img src="media/notification.png" alt="notification">
-                <span>Notification</span>
-            </a>
-        </header>
-        <aside class="flex-side-menu side-menu" aria-label="Main menu">
-
             <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
                 <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
                 <span class="head-icon">Music</span>
@@ -55,13 +36,70 @@
                 <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
                 <span class="icon-text">Notification</span>
             </a>
-                
+            <a href="index.html" class="nav-link" aria-label="Get the app">
+                <div class="nav-link-app">
+                    <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                    <span class="app-text">click to get it on your phone</span>
+                </div>  
+            </a>
+        </header>
+        <aside class="flex-side-menu side-menu" aria-label="Main menu">
+
+            <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
+                <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
+                <span class="head-icon">Music</span>
+            </a>
+             
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img class="icon-img" src="media/icons8-home-24.png" alt="home">
+                <span class="app-text">Hompage</span>
+            </a>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img class="icon-img" src="media/icons8-grid-48.png" alt="category">
+                <span class="icon-text">Category</span>
+            </a>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img class="icon-img" src="media/icons8-music-record-64.png" alt="album">
+                <span class="icon-text">Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
+                <span class="icon-text">Notification</span>
+            </a>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <a href="index.html" class="nav-link" aria-label="Get the app">
+                <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                <span class="icon-text">click to get it on your phone</span>
+            </a>
         </aside>
 
         <section class="flex-main-content main-content" aria-label="Main content">
             <!--Main content will go there-->
-            
+            <div class="centered-content">
+                <img src="media/profilephoto.jpg" alt="Avatar of the user">
+                <div class="text-content">
+                    <h1>Kayla</h1>
+                    <p>There is no notification currently.</p>
+                </div>
+            </div>
         </section>
+
+        <div class="promotion-banner">
+            <div class="bottom-grid-row">
+                <div class="col-8 col-md-12 col-lg-12">
+                    <p>Chance to jion us with the lower price!</p>
+                </div>
+                <div class="col-6 col-md-8 col-lg-10">
+                    <p id="your-discount-code">Click the button above to reveal your discount code</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <button id="discount-code">Give me a discount code!</button>
+                </div>  
+            </div>
+        </div>
 
         <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
             <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
