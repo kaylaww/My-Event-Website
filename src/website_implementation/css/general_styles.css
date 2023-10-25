@@ -1,11 +1,3 @@
-:root {
-    --pink: #F2BBC5;
-    --white: #F2F2F2;
-    --green: #C4DEDB;
-    --blue: #BCD4EC;
-    --yellow: #FAECC4;
-}
-
 html, body {
     background-color: white;
     margin: 0;
@@ -71,7 +63,12 @@ figcaption {
     text-decoration: none;
     color: #242424;
     font-weight: 530;
-    padding: 2vw;
+    margin-left: 30px;
+}
+
+.guess-like-link:hover {
+    background-color: pink;
+    border-radius: 10px;
 }
 
 .playlist-link {
@@ -80,49 +77,44 @@ figcaption {
     text-decoration: none;
     color: #242424;
     font-weight: 530;
-    padding: 2vw;
-}
-
-.control-album-link {
-    font-family: 'Dancing+Script', cursive;
-    font-size: medium;
-    text-decoration: none;
-    color: #242424;
-    font-weight: 530;
-    padding: 5px 5px;
     margin-left: 30px;
 }
 
-.artist-link {
-    font-family: 'Dancing+Script', cursive;
-    font-size: medium;
-    background-color: rgba(151, 151, 151, 0.741);
-    text-decoration: none;
-    border-radius: 7%;
-    color: #242424;
-    font-weight: 530;
-    padding: 5px 5px;
-    margin-top: 10px;;
+.playlist-link:hover {
+    background-color: pink;
+    border-radius: 10px;
 }
 
 /* Navigation */
 .nav-link {
     color: #242424;
     text-decoration: none;
+    padding: 3px 2px;
     font-weight: 400;
 
 }
 
-.nav-link:active {
-    background-color: gray;
+.nav-link:hover {
+    border-radius: 20px;
+    background: rgb(255, 249, 234);
 }
 
-.head-icon {
+.nav-link.active {
+    border-radius: 20px;
+    background: rgb(255, 249, 234);
+}
+
+.head-text {
     color: #242424;
     text-decoration: none;
     font-family: 'Dancing+Script', cursive;
     font-weight: 400;
     font-size: 40px
+}
+
+.head-img {
+    width: 40px;
+    margin-right: 10px;
 }
 
 .grab-picture-1 {
@@ -398,15 +390,8 @@ figcaption {
     
     .flex-main-content {
         margin-left: 250px;
+        margin-bottom: 50px;
         
-    }
-
-    .grab-picture-2 {
-        justify-items: center;
-        align-items: center;
-        height: 40vh;
-        width: auto;
-        margin-bottom: 100px;
     }
 
     .promotion-banner {
@@ -455,11 +440,6 @@ figcaption {
     .col-lg-12 { grid-column: span 12; }
 }
 
-.head-img {
-    width: 40px;
-    margin-right: 10px;
-}
-
 .icon-img{
     align-items: center;
     justify-items: center;
@@ -481,7 +461,7 @@ figcaption {
 }
 
 .nav-link-app {
-    margin-top: 250px;
     border-top: 1px solid gainsboro;
-    padding: 10px 0px;
+    text-decoration: none;
+    padding: 8px 0;
 }

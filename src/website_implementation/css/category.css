@@ -2,7 +2,7 @@
     position: relative;
     width: 80vw;
     margin-left: 35px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 10px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -28,6 +28,7 @@
     transform: translate(-50%, -50%);
     display: none; /* initial status */
     color: white;
+    text-shadow: 2px 2px #565656;
     text-align: center;
     font-family:'Courier New', Courier, monospace;
     font-size: 36px;
@@ -98,31 +99,4 @@
 
 .gallery-item{
     margin: 5px;
-}
-
-.create-album-link {
-    color: black;
-    font-family: 'Dancing+Script', cursive;
-    font-size: 36px;
-    font-weight: 700;
-    text-decoration: none;
-    text-shadow: 0 5px pink;
-    background-color: pink;
-    margin: 10px 30px;
-    padding: 2px 5px;  
-    border-radius: 5%;
-    }
-
-@media only screen and (min-width: 1195px) {
-    .create-album-link {
-    color: black;
-    font-family: 'Dancing+Script', cursive;
-    font-size: 36px;
-    font-weight: 700;
-    text-decoration: none;
-    text-shadow: 0 5px pink;
-    background-color: pink;
-    margin: 30px 30px;
-    padding: 2px 5px;
-    }
 }

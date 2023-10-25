@@ -1,0 +1,38 @@
+.centered-content img {
+    width: 25vw;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid gainsboro;
+
+}
+
+.flex-main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.text-content h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-content p {
+    font-family: 'Times New Roman', Times, serif
+}
+
+.nav-link-app {
+    margin-top: 250px;
+    border-top: 1px solid gainsboro;
+    padding: 10px 0px;
+}
+
+.app-text {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1vw;
+    color: gray;
+}

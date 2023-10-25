@@ -16,15 +16,15 @@
     padding: 1vh;
 }
 
+#playbutton {
+    width: 1.5vw;
+    height: auto;
+}
+
 .decoration-bar {
     justify-items: center;
     align-items: center;
     width: 25vw;
-    height: auto;
-}
-
-.login {
-    width: 6vw;
     height: auto;
 }
 

@@ -1,0 +1,480 @@
+html, body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;  
+}
+
+
+
+h1 {
+    color: black;
+    font-family: 'Dancing+Script', cursive;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 10px;
+    }
+
+h2 {
+    color: black;
+    font-family: 'Dancing+Script', cursive;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 10px;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 1fr;
+    }
+
+.brand {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        background-color: #94e9f1;
+        padding: 10px;
+        font-size: 25px;
+        font-weight:bold;
+        color: white;
+        }
+        
+.page-links {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+        text-align: right;
+        background-color: #94e9f1;
+        padding: 10px;
+        }
+
+.heading_center {
+    text-align: center;
+}
+
+figcaption {
+    color: grey;
+    font-weight: 100;
+}
+
+.guess-like-link {
+    font-family: 'Dancing+Script', cursive;
+    font-size: medium;
+    text-decoration: none;
+    color: #242424;
+    font-weight: 530;
+    padding: 2vw;
+}
+
+.playlist-link {
+    font-family: 'Dancing+Script', cursive;
+    font-size: medium;
+    text-decoration: none;
+    color: #242424;
+    font-weight: 530;
+    padding: 2vw;
+}
+
+.control-album-link {
+    font-family: 'Dancing+Script', cursive;
+    font-size: medium;
+    text-decoration: none;
+    color: #242424;
+    font-weight: 530;
+    padding: 5px 5px;
+    margin-left: 30px;
+}
+
+.artist-link {
+    font-family: 'Dancing+Script', cursive;
+    font-size: medium;
+    background-color: rgba(151, 151, 151, 0.741);
+    text-decoration: none;
+    border-radius: 7%;
+    color: #242424;
+    font-weight: 530;
+    padding: 5px 5px;
+    margin-top: 10px;;
+}
+
+/* Navigation */
+.nav-link {
+    color: #242424;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+
+.nav-link:active {
+    background-color: gray;
+}
+
+.head-icon {
+    color: #242424;
+    text-decoration: none;
+    font-family: 'Dancing+Script', cursive;
+    font-weight: 400;
+    font-size: 40px
+}
+
+.grab-picture-1 {
+    justify-items: center;
+    align-items: center;
+    height: 45vh;
+    width: auto;
+}
+
+.grab-picture-2 {
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.flex-header-menu, .flex-footer-menu, .flex-side-menu {
+    flex-shrink: 0;
+    background-color: rgb(246, 246, 246);
+    color: #000;
+    border: 1px solid #cecece;
+    padding: 0px 4px 0px 4px;
+}
+
+.flex-main-content {
+    width: 100%;
+    
+}
+
+/* Mobile-first: These rules apply by default */
+.flex-header-menu {
+    display: none; /*hide the header*/
+}
+
+.flex-side-menu {
+    display: none;
+}
+
+.flex-footer-menu {
+    /* show the footer*/
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 2vh 5vw;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.flex-footer-menu img{
+    width: 2vw;
+    height: auto;
+    min-width: 24px;
+    max-width: 50px;
+}
+
+.main-container {
+    width: 100vw; /*set the widthe to full screen*/
+}
+
+.grid-row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(10vh, auto);
+    gap: 16px;
+    margin: 2vh 2vw;
+}
+
+.top-grid-row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(1vh, 4vh);
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-items: center;
+}
+.bottom-grid-row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(1vh, 3vh);
+    gap: 8px;
+    align-items: center;
+    justify-items: start;
+}
+.grid-row img {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto;
+    object-fit: contain;
+}
+
+.top-grid-row img {
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    object-fit: contain;
+}
+.promotion-banner {
+    position: absolute;
+    width: 100%;
+    background-color: #7bf2ff;
+    color: #000000; 
+    text-align: start; 
+    padding: 15px; 
+    z-index: 1;
+}
+
+.promotion-banner p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top-bar  {
+    margin-top: 95px;
+}
+
+.top-banner {
+    width: 100%;
+    background-color: #aaf6ff;
+    color: #000000; 
+    border-bottom: 1px solid #d1d1d1;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.top-banner p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+@media only screen and (min-width: 601px) and (max-width: 1194px) {
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .flex-header-menu{
+        display: none;
+    }
+
+    .flex-side-menu {
+        position: fixed;
+        height: 100%;
+        display: grid;
+        width: 170px;
+        grid-auto-rows: min-content;
+        gap: 4vh;
+        padding: 5vh 3vw;
+        align-content: start;
+        justify-content: center;
+        text-align: center;
+    }
+    .flex-side-menu a {
+        background-color: rgb(246, 246, 246);
+    }
+
+    .flex-side-menu a:active {
+        background-color: #d3d2d2;
+    }
+    .flex-side-menu img{
+        width: 2vw;
+        height: auto;
+        min-width: 24px;
+        max-width: 40px;
+    }
+
+    .flex-side-menu span{
+        display: block;
+    }
+
+    .flex-main-content {
+        margin-left: 220px;
+        width: 100%;
+        
+    }
+
+    .flex-footer-menu {
+        display: none; 
+    }
+
+    .promotion-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6vh;
+        background-color: #7bf2ff;
+        color: #000000; 
+        text-align: start; 
+        padding: 20px; 
+    }
+
+    .top-bar  {
+        margin-top: 0px;
+    }
+
+    .col-md-1 { grid-column: span 1; }
+    .col-md-2 { grid-column: span 2; }
+    .col-md-3 { grid-column: span 3; }
+    .col-md-4 { grid-column: span 4; }
+    .col-md-5 { grid-column: span 5; }
+    .col-md-6 { grid-column: span 6; }
+    .col-md-7 { grid-column: span 7; }
+    .col-md-8 { grid-column: span 8; }
+    .col-md-9 { grid-column: span 9; }
+    .col-md-10 { grid-column: span 10; }
+    .col-md-11 { grid-column: span 11; }
+    .col-md-12 { grid-column: span 12; }
+}
+
+@media only screen and (min-width: 1195px) {
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .flex-header-menu{
+        position: fixed;
+        height: 100%;
+        display: grid;
+        width: 170px;
+        grid-auto-rows: min-content;
+        gap: 4vh;
+        padding: 5vh 3vw;
+    }
+
+    .flex-side-menu {
+        display: none;
+    }
+
+    .flex-header-menu a {
+        background-color: rgb(246, 246, 246);
+    }
+
+    .flex-header-menu a:active {
+        background-color: #d3d2d2;
+    }
+
+    .flex-footer-menu {
+        display: none; 
+    }
+    
+    .main-container-menu {
+        width: 75vw; 
+    }
+    
+    .flex-main-content {
+        margin-left: 250px;
+        margin-bottom: 50px;
+        
+    }
+
+    .grab-picture-2 {
+        justify-items: center;
+        align-items: center;
+        height: 40vh;
+        width: auto;
+        margin-bottom: 100px;
+    }
+
+    .promotion-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6vh;
+        background-color: #7bf2ff;
+        color: #000000; 
+        text-align: start; 
+        padding: 20px; 
+    }
+    
+    .top-bar  {
+        margin-top: 0px;
+    }
+
+    h1 {
+        color: black;
+        font-family: 'Dancing+Script', cursive;
+        font-size: 36px;
+        font-weight: 700;
+        margin-left: 30px;
+        }
+    
+    h2 {
+        color: black;
+        font-family: 'Dancing+Script', cursive;
+        font-weight: 400;
+        margin-left: 30px;
+        margin-top: 10px;
+        }
+
+    .col-lg-1 { grid-column: span 1; }
+    .col-lg-2 { grid-column: span 2; }
+    .col-lg-3 { grid-column: span 3; }
+    .col-lg-4 { grid-column: span 4; }
+    .col-lg-5 { grid-column: span 5; }
+    .col-lg-6 { grid-column: span 6; }
+    .col-lg-7 { grid-column: span 7; }
+    .col-lg-8 { grid-column: span 8; }
+    .col-lg-9 { grid-column: span 9; }
+    .col-lg-10 { grid-column: span 10; }
+    .col-lg-11 { grid-column: span 11; }
+    .col-lg-12 { grid-column: span 12; }
+}
+
+.head-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.icon-img{
+    align-items: center;
+    justify-items: center;
+    width: 18px;
+    height: auto;
+}
+
+.icon-text {
+    font-size: 12px;
+    font-weight: 450;
+    padding: 1vw;
+}
+
+.app-text {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 1vw;
+    color: gray;
+}
+
+.nav-link-app {
+    margin-top: 250px;
+    border-top: 1px solid gainsboro;
+    padding: 10px 0px;
+}

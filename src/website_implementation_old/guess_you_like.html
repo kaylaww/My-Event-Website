@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/music.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <header>
+        <h1>Music Player</h1>
+    </header>
+
+    <main>
+        <div class="music-player">
+            <div class="music-info">
+                <h2>Song Title</h2>
+                <p>Artist Name</p>
+            </div>
+            <audio id="audio" controls>
+                <source src="song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <ul class="playlist">
+                <li><a href="song1.mp3">Song 1</a></li>
+                <li><a href="song2.mp3">Song 2</a></li>
+                <li><a href="song3.mp3">Song 3</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Music Player</p>
+    </footer>
+    <script src="src/website_implementation/js/site_interactions.js"></script>
+</body>
+</html>

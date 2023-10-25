@@ -11,13 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fredericka+the+Great&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general_styles.css">
     <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="css/login_style.css">
  </head>
  <body>
     <div class="flex-container">
         <header class="flex-header-menu header-menu" aria-label="Main menu">
-            <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
+            <a href="index.html" class="head-text" aria-label="head-icon" aria-current="page">
                 <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
-                <span class="head-icon">Music</span>
+                <span>Music</span>
             </a>
              
             <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
@@ -36,11 +37,10 @@
                 <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
                 <span class="icon-text">Notification</span>
             </a>
-            <a href="index.html" class="nav-link" aria-label="Get the app">
-                <div class="nav-link-app">
-                    <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
-                    <span class="app-text">click to get it on your phone</span>
-                </div>  
+            <br><br><br><br><br><br><br><br>
+            <a href="index.html" class="nav-link-app" aria-label="Get the app">
+                <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                <span class="app-text">click to get it on your phone</span>
             </a>
         </header>
         <aside class="flex-side-menu side-menu" aria-label="Main menu">
@@ -66,11 +66,9 @@
                 <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
                 <span class="icon-text">Notification</span>
             </a>
-            <a href="index.html" class="nav-link" aria-label="Get the app">
-                <div class="nav-link-app">
-                    <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
-                    <span class="app-text">click to get it on your phone</span>
-                </div>  
+            <a href="index.html" class="nav-link-app" aria-label="Get the app">
+                <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                <span class="app-text">click to get it on your phone</span>
             </a>   
         </aside>
         <section class="flex-main-content main-content" aria-label="Main content">
@@ -89,7 +87,9 @@
                             </div>
             
                             <div class="col-2 col-md-2 col-lg-2">
-                                <img class="play-bar" src="media/playblue.png" alt="play">
+                                <a href="#" aria-label="play">
+                                    <img class="play-bar" src="media/playblue.png" id="playbutton" alt="play">
+                                </a>
                             </div>
             
                             <div class="col-2 col-md-2 col-lg-2">
@@ -103,6 +103,10 @@
                         </div>
                     </div>
 
+                    <audio id="mysong">
+                        <source src="media/Unpredictableweather.mp3" type="audio/mp3">
+                    </audio>
+
                     <div class="col-6 col-md-5 col-lg-6">
                         <img class="decoration-bar" src="media/decorationbar.png" alt="decoration">
                     </div>
@@ -113,7 +117,7 @@
                             </div>
             
                             <div class="col-3 col-md-3 col-lg-2">
-                                <a href="menu.html" class="nav-link" aria-label="menu">
+                                <a href="#" class="nav-link" aria-label="menu">
                                     <img class="menu" src="media/menu.png" alt="menu">
                                 </a>
                             </div>
@@ -123,9 +127,7 @@
                         <div class="top-grid-row">
                             <div class="col-2 col-md-1 col-lg-1"></div>
                             <div class="col-9 col-md-9 col-lg-10">
-                                <a href="login.html" class="nav-link" aria-label="login">
-                                    <img class="login" src="media/login.png" alt="login">
-                                </a>
+                                <button class="login_button">login</button>
                             </div>
                             <div class="col-1 col-md-1 col-lg-1">
                             </div>
@@ -134,15 +136,78 @@
                     
                 </div>
             </div>
+
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+    
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="form-box register">
+                    <h2>Registration</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="person"></ion-icon>
+                            </span>
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> I agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-register">
+                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
             
             <div>
                 <hr>
                 <h1>Find Your Music Wonderland</h1>
-                <!-- <div class="grid-row">
-                    <div class="col-12 col-md-12 col-lg-12">
-                        <hr>
-                    </div>
-                </div> -->
                 <h2>Welcome to Music Wonderland - Your Ultimate Destination for Musical Bliss!</h2>
             </div>
             
@@ -162,7 +227,7 @@
                 </div>
             </div>
             <div>
-                <a class="playlist-link" href="playlist.html">Playlist ></a>
+                <a class="playlist-link" href="">Playlist ></a>
             </div>
             <div class="grid-row">
                 <div class="col-6 col-md-3 col-lg-3">
@@ -182,7 +247,9 @@
                     <img class="grab-picture-2" src="media/plcover4.png" alt="covers">
                 </div>
             </div>
+            <br><br><br>
         </section>
+        
         <div class="promotion-banner">
             <div class="bottom-grid-row">
                 <div class="col-8 col-md-12 col-lg-12">
@@ -217,6 +284,10 @@
     </div> <!-- closes the main div -->
  
     <script src="js/site_interactions.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
  </body>

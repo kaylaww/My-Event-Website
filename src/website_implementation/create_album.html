@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MUSIC WONDERLAND</title>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fredericka+the+Great&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/general_styles.css">
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/creat_album.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+ </head>
+ <body>
+    <div class="flex-container">
+        <header class="flex-header-menu header-menu" aria-label="Main menu">
+            <a href="index.html" class="head-text" aria-label="head-icon" aria-current="page">
+                <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
+                <span>Music</span>
+            </a>
+             
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img class="icon-img" src="media/icons8-home-24.png" alt="home">
+                <span class="icon-text">Hompage</span>
+            </a>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img class="icon-img" src="media/icons8-grid-48.png" alt="category">
+                <span class="icon-text">Category</span>
+            </a>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img class="icon-img" src="media/icons8-music-record-64.png" alt="album">
+                <span class="icon-text">Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
+                <span class="icon-text">Notification</span>
+            </a>
+            <br><br><br><br><br><br><br><br>
+            <a href="index.html" class="nav-link-app" aria-label="Get the app">
+                <img class="icon-img" src="media/icons8-iphone-14-pro-48.png" alt="iphone-14-pro">
+                <span class="app-text">click to get it on your phone</span>
+            </a>
+        </header>
+        <aside class="flex-side-menu side-menu" aria-label="Main menu">
+
+            <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
+                <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
+                <span class="head-icon">Music</span>
+            </a>
+             
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img class="icon-img" src="media/icons8-home-24.png" alt="home">
+                <span class="icon-text">Hompage</span>
+            </a>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img class="icon-img" src="media/icons8-grid-48.png" alt="category">
+                <span class="icon-text">Category</span>
+            </a>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img class="icon-img" src="media/icons8-music-record-64.png" alt="album">
+                <span class="icon-text">Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img class="icon-img" src="media/icons8-notification-24.png" alt="notification">
+                <span class="icon-text">Notification</span>
+            </a>
+                
+        </aside>
+        <section class="flex-main-content main-content" aria-label="Main content">
+            <!--Main content will go there-->
+            <div class="top-banner">
+                <div class="top-grid-row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <p>Album</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid-row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <p class="grab-text">Interact with your fans or your favorite artists! Facilitating social interaction among artists and fans, listeners and listeners, and artists and artists</p>
+                    <p class="grab-text">Post your creations, express emotions, share stories, and discuss findings.A valuable place for artists to draw inspiration from others. For listeners, the community would be a place to engage with their favourite artists through features such as community discussions or direct messages.</p>
+                </div>
+                <div class="col-12 col-md-12 col-lg-8">
+                    <div class="grid-row">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="card" role="group" aria-labelledby="card-form-title" aria-describedby="card-form-desc">
+                                <h2 class="card-header m-2" id="card-form-title">Create your album</h2>
+                                <p class="card-body-text p-2" id="card-form-desc">This is the form used to submit an album</p>
+                                <form id="eventForm" class="m-2" enctype="multipart/form-data">   
+                                    <div class="form-group">
+                                        <label for="name">Name:</label> 
+                                        <input type="text" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="song_title">Album Name:</label> 
+                                        <input type="text" id="song_title" name="song_title" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="genre">Genre:</label> 
+                                        <input type="text" id="genre" name="genre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description:</label>
+                                        <textarea id="description" name="description" rows="4" required></textarea> 
+                                    </div> 
+                                    <!-- <div class="form-group">
+                                        <label for="date_time">Date and Time:</label>
+                                        <input type="text" id="date_time" name="date_time" placeholder="eg. 2023-05-31 14:30" required> 
+                                    </div>  -->
+                                    <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <input type="text" id="message" name="message" required> 
+                                    </div> 
+                                    <div class="form-group">
+                                        <label for="audio_file" id="audio-file-input-label" class="p-1">Add a song</label> 
+                                        <input type="file" name="audio_file" id="audio-file-input" accept="audio/*" required> <span id="selected-file-name"></span>
+                                    </div> 
+                                    <div> 
+                                        <input class="btn btn-primary" type="submit" value="Submit Album">
+                                    </div> 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-row" id="events-container"> <!--second part my project demonstration-->
+                    </div>
+                    <br><br><br>
+                </div> 
+            </div>
+        </section>
+        <div class="promotion-banner">
+            <div class="bottom-grid-row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <p>Chance to jion us with the lower price!</p>
+                </div>
+                <div class="col-6 col-md-10 col-lg-10">
+                    <p id="your-discount-code">Click the button above to reveal your discount code</p>
+                </div>
+                <div class="col-6 col-md-2 col-lg-2">
+                    <button id="discount-code">Give me a discount code!</button>
+                </div>  
+            </div>
+        </div>
+        <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
+            <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
+                <img src="media/home.png" alt="home">
+                <span>Hompage</span>
+            </a>
+            <a href="category.html" class="nav-link" aria-label="Category">
+                <img src="media/category.png" alt="category">
+                <span>Category</span>
+            </a>
+            <a href="album.html" class="nav-link" aria-label="Album">
+                <img src="media/lougemusic.png" alt="album">
+                <span>Generate Album</span>
+            </a>
+            <a href="notification.html" class="nav-link" aria-label="Notification">
+                <img src="media/notification.png" alt="notification">
+                <span>Notification</span>
+            </a>
+        </footer>
+    </div> <!-- closes the main div -->
+ 
+    <script src="js/site_interactions.js"></script>
+    <script src="js/card_heights.js"></script>
+    <script src="js/demo_interaction.js"></script>
+
+
+ </body>
+</html>

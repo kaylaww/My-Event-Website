@@ -1,0 +1,131 @@
+.text-center {
+    text-align: center;
+}
+
+.m-2 {
+    margin: 2vh 2vw;
+}
+
+.mx-2 {
+    margin: o 2vw;
+}
+
+.mv-2 {
+    margin: 2vh 0;
+}
+
+.p-2 {
+    margin: 2vh 2vw;
+}
+
+.px-2 {
+    margin: 0 2vw;
+}
+
+.py-2 {
+    margin: 2vh 0;
+}
+
+.grab-text {
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    text-align: start;
+    padding: 0 5vw;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px gray;
+    background-color: rgb(249, 230, 255);
+    background-size: cover;
+    background-position: center;
+    padding: 2vh;
+}
+
+.card-header {
+    margin-top: 10px;
+    color: rgb(68, 218, 255);
+    font-weight: 600;
+    font-size: larger;
+}
+
+.card-body-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: rgb(107, 107, 107);
+}
+
+label {
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    width: 90%;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input[type="text"]
+.form-group textarea {
+    width: 85%;
+    padding: 0.5rem;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-check {
+    margin-bottom: 0.25rem;
+}
+
+.form-check-label {
+    display: inline !important;
+    margin-left: 0.25rem;
+}
+
+.btn {
+    padding: 7px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    font-size: 1em;
+}
+
+.btn-primary {
+    background: pink;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: yellow;
+    color: #000;
+}
+
+#audio-file-input-label {
+    width: 30%;
+    padding: 5px;
+    background-color: #717171;
+    color: #fff;
+    cursor: pointer;
+    border: #ced4da;
+    border-style: solid;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+#audio-file-input-label:hover {
+    background-color: #ced4da;
+    color: #000;
+}
+
+#audio-file-input {
+    display: none;
+}
