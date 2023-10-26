@@ -1,3 +1,4 @@
+// Function to change the height of all cards to match the tallest card
 const changeCardHeights = () => {
     let maxHeight = 0;
 
@@ -12,5 +13,7 @@ const changeCardHeights = () => {
     cards.forEach(card => card.computedStyleMap.height = maxHeight + "px");
 }
 
+// Add an event listener to run the changeCardHeights function when the page loads
 window.addEventListener('load', changeCardHeights);
+// Add an event listener to run the changeCardHeights function when the window is resized
 window.addEventListener('resize', changeCardHeights);

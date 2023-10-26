@@ -80,6 +80,8 @@ const getMusic = () => {
         while (musicContainer.firstChild) {
             musicContainer.removeChild(musicContainer.firstChild);
         }
+        
+        // template for all form inthe future
         musics.forEach(music => {
             const musicTemplate = `
                 <article class="col-12 col-md-12 col-lg-6">
