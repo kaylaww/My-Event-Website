@@ -1,3 +1,4 @@
+/* general style */
 html, body {
     background-color: white;
     margin: 0;
@@ -6,8 +7,7 @@ html, body {
     width: 100%;  
 }
 
-
-
+/* set text style */
 h1 {
     color: black;
     font-family: 'Dancing+Script', cursive;
@@ -24,39 +24,14 @@ h2 {
     margin-top: 10px;
     }
 
+/* grid to position content */
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto 1fr;
     }
 
-.brand {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-        background-color: #94e9f1;
-        padding: 10px;
-        font-size: 25px;
-        font-weight:bold;
-        color: white;
-        }
-        
-.page-links {
-        grid-column: 3 / span 2;
-        grid-row: 1;
-        text-align: right;
-        background-color: #94e9f1;
-        padding: 10px;
-        }
-
-.heading_center {
-    text-align: center;
-}
-
-figcaption {
-    color: grey;
-    font-weight: 100;
-}
-
+/* styling two main functions in homepage */
 .guess-like-link {
     font-family: 'Dancing+Script', cursive;
     font-size: medium;
@@ -104,6 +79,7 @@ figcaption {
     background: rgb(255, 249, 234);
 }
 
+/* Music title on homepage */
 .head-text {
     color: #242424;
     text-decoration: none;
@@ -117,6 +93,7 @@ figcaption {
     margin-right: 10px;
 }
 
+/* two help css for styling img */
 .grab-picture-1 {
     justify-items: center;
     align-items: center;
@@ -131,10 +108,12 @@ figcaption {
     width: 100%;
 }
 
+/* content for notification & playlist page */
 .centered-content {
     margin-top: 20px;
 }
 
+/* 3 menus for different size */
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -204,6 +183,8 @@ figcaption {
     align-items: center;
     justify-items: center;
 }
+
+/* grid for promotion banner */
 .bottom-grid-row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -237,6 +218,7 @@ figcaption {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* top banner on homepage */
 .top-banner {
     width: 100%;
     background-color: #aaf6ff;
@@ -276,8 +258,9 @@ figcaption {
         display: none;
     }
 
+    /* display side menu */
     .flex-side-menu {
-        position: fixed;
+        position: fixed;  
         height: 100%;
         display: grid;
         width: 130px;
@@ -351,6 +334,7 @@ figcaption {
         flex-direction: row;
     }
 
+    /* display header menu */
     .flex-header-menu{
         position: fixed;
         height: 100%;
@@ -433,6 +417,7 @@ figcaption {
     .col-lg-12 { grid-column: span 12; }
 }
 
+/* img in menu */
 .icon-img{
     align-items: center;
     justify-items: center;
@@ -440,6 +425,7 @@ figcaption {
     height: auto;
 }
 
+/* text in menu */
 .icon-text {
     font-size: 12px;
     font-weight: 450;
@@ -453,6 +439,7 @@ figcaption {
     color: gray;
 }
 
+/* link for get app on mobile devices */
 .nav-link-app {
     border-top: 1px solid gainsboro;
     text-decoration: none;

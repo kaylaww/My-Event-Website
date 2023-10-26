@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="css/playlist.css">
  </head>
  <body>
+    <!-- main content from here -->
     <div class="top-banner">
+        <!-- add icons for the top banner -->
         <div class="grid-row">
             <div class="col-1 col-md-1 col-lg-1">
                 <div class="top-grid-row">
@@ -48,9 +50,10 @@
             </div>
         </div>
     </div>
+    <!-- divide the page into two equal parts -->
     <div class="split-container">
         <div class="left-section">
-            <!-- left content -->
+            <!-- left content for functions-->
             <div class="centered-content">
                 <img src="media/playcover.png" alt="cover of music">
             </div>
@@ -73,7 +76,7 @@
             </div>
         </div>
         <div class="right-section">
-            <!-- right content -->
+            <!-- right content for lyrics-->
             <div class="lyrics">
                 <p>Here comes the summer</p>
                 <p>仲夏临近</p>
@@ -92,13 +95,18 @@
             </div>
         </div>
     </div>
+
     <div class="footer-banner">
+        <!-- footer banner of some functions -->
         <img src="media/playlistbanner.png" id="playbutton" alt="play bar">
     </div>
+
+    <!-- add audio can be played by the play button in footer menu -->
     <audio id="mysong">
         <source src="media/Tothetop.mp3" type="audio/mp3">
     </audio>
 
-    <script src="js/music.js"></script>
+    <!-- js for play the music -->
+    <script src="js/play.js"></script>
  </body>
 </html>

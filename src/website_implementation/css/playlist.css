@@ -10,11 +10,13 @@ html, body {
     display: flex;
 }
 
+/* split page into two equal parts */
 .left-section, .right-section {
     flex: 1;
     
 }
 
+/* styling left part */
 .left-section {
     background-color: white;
     display: flex;
@@ -24,6 +26,7 @@ html, body {
     border-right: 1px solid gainsboro;
 }
 
+/* styling right part */
 .right-section {
     background-color: white;
     justify-content: center;
@@ -32,12 +35,14 @@ html, body {
     text-align: center;
 }
 
+/* set the left and right section be top and bottom for small device */
 @media (max-width: 768px) {
     .split-container {
         flex-direction: column;
     }
 }
 
+/* atyling top banner */
 .top-banner {
     background-color: pink;
     color: white;
@@ -50,6 +55,7 @@ html, body {
     height: auto;
 }
 
+/* styling functions under img of cover of musc */
 .music-function img {
     width: 25px;
     height: auto;
@@ -58,6 +64,7 @@ html, body {
     border-radius: 50%;
 }
 
+/* use grid to appropriate position elements */
 .grid-row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -74,17 +81,20 @@ html, body {
 
 }
 
+/* set the element be centered */
 .centered-content {
     justify-items: center;
     align-content: center;
 }
 
+/* styling the text of lyrics */
 .lyrics {
     font-family: Poppins;
     font-weight: 400;
     color: gray;
 }
 
+/* styling the footer banner */
 .footer-banner {
     position: fixed;
     bottom: 0;
@@ -101,6 +111,7 @@ html, body {
     height: auto;
 }
 
+/* highlight the ling of lyrics is playing */
 .played-lyric {
     color: #000;
     font-weight: 500;

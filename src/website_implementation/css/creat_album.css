@@ -2,12 +2,13 @@
     text-align: center;
 }
 
+/* set a general class for get margin */
 .m-2 {
     margin: 2vh 2vw;
 }
 
 .mx-2 {
-    margin: o 2vw;
+    margin: 0 2vw;
 }
 
 .mv-2 {
@@ -26,6 +27,7 @@
     margin: 2vh 0;
 }
 
+/* styling specific text */
 .grab-text {
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -35,6 +37,7 @@
     padding: 0 5vw;
 }
 
+/* styling album get through API */
 .card {
     border-radius: 10px;
     box-shadow: 5px 10px 50px rgb(192, 192, 192);
@@ -72,6 +75,7 @@ label {
     color: black;
 }
 
+/* styling element in form */
 .form-group {
     margin-bottom: 1rem;
 }
@@ -141,6 +145,7 @@ label {
     display: none;
 }
 
+/* set the backgroud color */
 .flex-main-content {
     background-color: #5d5d5d;
 }

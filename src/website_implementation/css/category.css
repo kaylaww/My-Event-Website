@@ -1,15 +1,4 @@
-@media only screen and (min-width: 1195px) {
-    .gallery-container{
-        position: relative;
-        width: 80vw;
-        margin-left: 30px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, auto);
-    }
-}
+/* set the page in 8 equal grid */
 .gallery-container{
     position: relative;
     width: 98%;
@@ -53,6 +42,7 @@
     display: block; /* emerge hover */
 }
 
+/* set different position for img */
 #gallery_item_1{
     grid-column-start: 1;
     grid-column-end: 3;

@@ -16,6 +16,7 @@
  <body>
     <div class="flex-container">
         <header class="flex-header-menu header-menu" aria-label="Main menu">
+            <!-- header menu from here -->
             <a href="index.html" class="head-text" aria-label="head-icon" aria-current="page">
                 <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
                 <span>Music</span>
@@ -44,7 +45,7 @@
             </a>
         </header>
         <aside class="flex-side-menu side-menu" aria-label="Main menu">
-
+            <!-- side menu from here -->
             <a href="index.html" class="nav-link" aria-label="head-icon" aria-current="page">
                 <img class="head-img" src="media/icons8-airpods-pro-max-50.png" alt="head-icon">
                 <span class="head-icon">Music</span>
@@ -75,8 +76,9 @@
         <section class="flex-main-content main-content" aria-label="Main content">
             <!--Main content will go there-->
             <div class="top-bar">
+                <!-- creat top banner by grid -->
                 <div class="top-grid-row">
-                    <div class="col-12 col-md-3 col-lg-3">
+                    <div class="col-6 col-md-3 col-lg-3">
                         <div class="top-grid-row">
                             <div class="col-2 col-md-2 col-lg-2">
                             </div>
@@ -103,7 +105,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- add music file which can be played by click the play button -->
                     <audio id="mysong">
                         <source src="media/Unpredictableweather.mp3" type="audio/mp3">
                     </audio>
@@ -111,7 +113,7 @@
                     <div class="col-6 col-md-6 col-lg-6">
                         <img class="decoration-bar" src="media/decorationbar.png" alt="decoration">
                     </div>
-                    <div class="col-4 col-md-2 col-lg-2">
+                    <div class="col-8 col-md-2 col-lg-2">
                         <div class="top-grid-row">
                             <div class="col-6 col-md-6 col-lg-6"> 
                                 <img class="volumn" src="media/icons8-low-volume-64.png" alt="volume">
@@ -124,20 +126,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 col-md-1 col-lg-1">
+                    <div class="col-4 col-md-1 col-lg-1">
                         <div class="top-grid-row">
                             <div class="col-2 col-md-1 col-lg-1"></div>
                             <div class="col-6 col-md-6 col-lg-10">
                                 <button class="login_button">login</button>
                             </div>
-                            <!-- <div class="col-1 col-md-1 col-lg-1">
-                            </div> -->
                         </div>
                     </div>
                     
                 </div>
             </div>
-
+            <!-- create login button and function -->
             <div class="wrapper">
                 <span class="icon-close">
                     <ion-icon name="close"></ion-icon>
@@ -207,6 +207,7 @@
             </div>
             
             <div>
+                <!-- main content for homepage -->
                 <hr>
                 <h1>Find Your Music Wonderland</h1>
                 <h2>Welcome to Music Wonderland - Your Ultimate Destination for Musical Bliss!</h2>
@@ -252,6 +253,7 @@
         </section>
         
         <div class="promotion-banner">
+            <!-- promotion banner from here -->
             <div class="bottom-grid-row">
                 <div class="col-8 col-md-12 col-lg-12">
                     <p>Chance to jion us with the lower price!</p>
@@ -264,7 +266,9 @@
                 </div>  
             </div>
         </div>
+
         <footer class="flex-footer-menu footer-menu" aria-label="Main menu">
+            <!-- footer menu from here -->
             <a href="index.html" class="nav-link" aria-label="Hompage" aria-current="page">
                 <img src="media/home.png" alt="home">
                 <span>Hompage</span>
@@ -284,9 +288,13 @@
         </footer>
     </div> <!-- closes the main div -->
  
+    <!-- js for get discount code -->
     <script src="js/site_interactions.js"></script>
+    <!-- js for play the music -->
     <script src="js/play.js"></script>
-    <script src="js/script.js"></script>
+    <!-- js for login button -->
+    <script src="js/login.js"></script>
+    <!-- link icons of login page -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

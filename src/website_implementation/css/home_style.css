@@ -1,3 +1,4 @@
+/* icons in login page */
 .icon {
     display: grid;
     grid-auto-rows: min-content;
@@ -10,8 +11,9 @@
     padding: 2vw;
 }
 
+/* music play button */
 .play-bar {
-    width: 1vw;
+    width: 2vw;
     height: auto;
     padding: 1vh;
 }
@@ -21,6 +23,7 @@
     height: auto;
 }
 
+/* main img in top banner on homepage */
 .decoration-bar {
     justify-items: center;
     align-items: center;
@@ -28,18 +31,15 @@
     height: auto;
 }
 
+/* menu button */
 .menu {
     width: 50%;
     height: auto;
 }
 
+/* volume button */
 .volumn {
     width: 50%;
     height: auto;
     margin: 3px;
-}
-
-.searchbar {
-    width: auto;
-    height: 10vh;
 }

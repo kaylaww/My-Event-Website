@@ -1,3 +1,4 @@
+/* styling the nav-link in album page */
 .artist-link {
     font-family: 'Dancing+Script', cursive;
     font-size: medium;
@@ -45,6 +46,7 @@
     border-radius: 10px;
 }
 
+/* reset the css for desktop device */
 @media only screen and (min-width: 1195px) {
     .create-album-link {
         color: black;

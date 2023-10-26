@@ -44,7 +44,7 @@ const handleFormSubmit = music => {
     .then(data => {
         console.log(data.song_title);
         audioFileInputLabel.textContent = "Add a song"
-        alert(`Your eventYour album "${data.song_title}" submitted successfully!`);
+        alert(`Your album "${data.song_title}" submitted successfully!`);
         eventForm.reset();
         return data;
     })
