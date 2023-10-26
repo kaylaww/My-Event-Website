@@ -27,7 +27,7 @@
 }
 
 .grab-text {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: large;
     font-family:'Times New Roman', Times, serif;
@@ -37,7 +37,7 @@
 
 .card {
     border-radius: 10px;
-    box-shadow: 5px 10px 50px gray;
+    box-shadow: 5px 10px 50px rgb(192, 192, 192);
     background-color: rgb(249, 230, 255);
     background-size: cover;
     background-position: center;
@@ -55,6 +55,17 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     color: rgb(107, 107, 107);
+}
+
+.top-banner {
+    width: 100%;
+    background-color: #fcb1c5;
+    color: #000000; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 50px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -128,4 +139,8 @@ label {
 
 #audio-file-input {
     display: none;
+}
+
+.flex-main-content {
+    background-color: #5d5d5d;
 }

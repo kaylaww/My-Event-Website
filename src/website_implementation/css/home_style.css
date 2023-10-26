@@ -24,17 +24,17 @@
 .decoration-bar {
     justify-items: center;
     align-items: center;
-    width: 25vw;
+    width: 30vw;
     height: auto;
 }
 
 .menu {
-    width: 2vw;
+    width: 50%;
     height: auto;
 }
 
 .volumn {
-    width: 9vw;
+    width: 50%;
     height: auto;
     margin: 3px;
 }

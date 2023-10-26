@@ -131,6 +131,10 @@ figcaption {
     width: 100%;
 }
 
+.centered-content {
+    margin-top: 20px;
+}
+
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -161,15 +165,14 @@ figcaption {
 
 .flex-footer-menu {
     /* show the footer*/
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    bottom: 0px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
     padding: 2vh 5vw;
     text-align: center;
-    margin-bottom: 100px;
 }
 
 .flex-footer-menu img{
@@ -217,31 +220,21 @@ figcaption {
     object-fit: contain;
 }
 
-.top-grid-row img {
-    max-width: 100%; 
-    max-height: 100%; 
-    width: auto; 
-    height: auto;
-    align-items: center;
-    justify-items: center;
-    object-fit: contain;
-}
 .promotion-banner {
-    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    height: 6vh;
     background-color: #7bf2ff;
     color: #000000; 
     text-align: start; 
-    padding: 15px; 
-    z-index: 1;
+    padding: 20px; 
+    
 }
 
 .promotion-banner p {
     font-family: 'Times New Roman', Times, serif;
-}
-
-.top-bar  {
-    margin-top: 95px;
 }
 
 .top-banner {
@@ -287,7 +280,7 @@ figcaption {
         position: fixed;
         height: 100%;
         display: grid;
-        width: 170px;
+        width: 130px;
         grid-auto-rows: min-content;
         gap: 4vh;
         padding: 5vh 3vw;
@@ -314,7 +307,7 @@ figcaption {
     }
 
     .flex-main-content {
-        margin-left: 220px;
+        margin-left: 180px;
         width: 100%;
         
     }

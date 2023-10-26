@@ -32,6 +32,12 @@ html, body {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+}
+
 .top-banner {
     background-color: pink;
     color: white;
