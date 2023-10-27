@@ -446,9 +446,37 @@ h2 {
     padding: 8px 0;
 }
 
+/* styling discount button */
 #discount-code{
     background-color: #ffffff;
     border-radius: 10px;
     border: 2px solid gray;
     padding: 3px 2px;
 }
+
+/* Style the search container to position the search icon */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the search icon */
+.search-icon {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 50%;
+    right: 10px; /* Adjust the right distance as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Style the search bar input */
+.search-bar {
+    padding: 5px 30px; /* Adjust the padding to accommodate the icon */
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    width: 100px; 
+}
+
+
