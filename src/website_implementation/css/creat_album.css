@@ -1,3 +1,7 @@
+html, body {
+    background-color: #5d5d5d;  
+}
+
 .text-center {
     text-align: center;
 }
@@ -34,7 +38,7 @@
     font-size: large;
     font-family:'Times New Roman', Times, serif;
     text-align: start;
-    padding: 0 5vw;
+    padding: 0 10px;
 }
 
 /* styling album get through API */
@@ -73,6 +77,11 @@
 
 label {
     color: black;
+}
+
+.side-picture {
+    margin-top: 2vh;
+    border-radius: 20px;
 }
 
 /* styling element in form */
@@ -115,12 +124,12 @@ label {
 }
 
 .btn-primary {
-    background: pink;
-    color: #000;
+    background: rgb(69, 196, 255);
+    color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: yellow;
+    background-color: rgb(69, 196, 255);
     color: #000;
 }
 

@@ -445,3 +445,10 @@ h2 {
     text-decoration: none;
     padding: 8px 0;
 }
+
+#discount-code{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 3px 2px;
+}
