@@ -1,14 +1,20 @@
 // global constant variables
 const audioFileInputLabel = document.getElementById('audio-file-input-label');
 const audioFileInput = document.getElementById('audio-file-input');
+const photoFileInputLabel = document.getElementById('photo-file-input-label');
+const photoFileInput = document.getElementById('photo-file-input');
 const my_website_code = "kayla84";
 const baseURLMusic = "https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/musicians/"
 const postMusicAudioMethod = 'POST';
 const musicContainer = document.getElementById('albums-container');
 
 // constant functions
-const triggerFileInput = () => {
+const triggerAudioFileInput = () => {
     audioFileInput.click();
+};
+
+const triggerPhotoFileInput = () => {
+    photoFileInput.click();
 };
 
 const handleFileChange = () => {
@@ -86,7 +92,7 @@ const getMusic = () => {
             const musicTemplate = `
                 <article class="col-12 col-md-12 col-lg-6">
                     <div class="card" role="group" aria-labelledby="cards${music.id}-title" aria-describedby="card${music.id}-desc">
-                        <h2 class="card-header p-2" id="card${music. id}-title">${music.name}</h2> 
+                        <h2 class="card-header p-2" id="card${music.id}-title">${music.name}</h2>
                         <p class="card-body-text p-2">${music.description}</p>
                         <p class="card-body-text px-2"><strong>Song title:</strong> ${music.song_title}</p>
                         <p class="card-body-text px-2"><strong>Genre:</strong> ${music.genre}</p>
@@ -105,8 +111,9 @@ const getMusic = () => {
 }
 
 // envent listeners
-audioFileInputLabel.addEventListener('click', triggerFileInput);
+audioFileInputLabel.addEventListener('click', triggerAudioFileInput);
 audioFileInput.addEventListener('change', handleFileChange);
+photoFileInputLabel.addEventListener('click', triggerPhotoFileInput)
 eventForm.addEventListener("submit", handleFormSubmit);
 
 // page setip on first load
